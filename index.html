@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Human Token | Unico</title>
+  <meta name="description" content="With just a photo of their face, turn your user into a unique human. Recognize your users by their face, even when name, document and email change.">
+  <meta property="og:title" content="Human Token | Unico">
+  <meta property="og:description" content="One human. One token. Anywhere, every time.">
+  <meta property="og:image" content="assets/img/hero.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="/" class="logo" aria-label="Unico home"><img src="assets/icons/unico-logo.svg" alt="Unico" width="88" height="19"></a>
+    <nav class="header-nav" aria-label="Main">
+      <!-- TODO(agency): confirm final URLs -->
+      <a href="#" data-todo="demo-url">Demo</a>
+      <a href="#" data-todo="docs-url">Documentation</a>
+      <a href="#contact" class="btn btn-dark btn-sm">Get started <span aria-hidden="true">›</span></a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <h1 class="hero-title">Human Token</h1>
+        <p class="hero-tagline">One human. One token.<br>Anywhere, every time.</p>
+        <p class="hero-sub">With just a photo of their face, turn your user into a <strong>unique human.</strong></p>
+        <div class="hero-ctas">
+          <a href="#contact" class="btn btn-dark">Get started <span aria-hidden="true">›</span></a>
+          <a href="#contact" class="link-arrow">Talk to an expert <span aria-hidden="true">›</span></a>
+        </div>
+      </div>
+      <div class="hero-media">
+        <!-- Static image with the Unico capture frame + token chip.
+             TODO(agency): optional motion version (capture → token). Swap <img> for <video autoplay muted loop playsinline poster="assets/img/hero.jpg">. -->
+        <img src="assets/img/hero.jpg" alt="Person taking a selfie inside the Unico capture frame, with a token confirmation" width="560" height="628" fetchpriority="high">
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STRIP ============ -->
+  <section class="strip">
+    <div class="container">
+      <p class="strip-1">Recognize your users by their face, even when name, document and email change.</p>
+      <p class="strip-2">Anywhere, anytime, deepfake free.</p>
+    </div>
+  </section>
+
+  <!-- ============ HOW IT WORKS (step carousel, no scroll-jacking) ============ -->
+  <section class="steps" id="how-it-works" aria-roledescription="carousel" aria-label="How it works">
+    <div class="container">
+      <div class="steps-head">
+        <div>
+          <p class="eyebrow">How it works</p>
+          <h2>Selfie in, token out.</h2>
+        </div>
+        <div class="steps-controls">
+          <button class="ctrl ctrl-pause" type="button" aria-pressed="false" data-pause><span class="ctrl-pause-icon" aria-hidden="true"></span><span class="ctrl-label">Pause</span></button>
+          <button class="ctrl ctrl-arrow" type="button" aria-label="Previous step" data-prev>‹</button>
+          <button class="ctrl ctrl-arrow" type="button" aria-label="Next step" data-next>›</button>
+        </div>
+      </div>
+
+      <div class="steps-stage">
+        <!-- Each slide: media on the left, copy on the right.
+             TODO(agency): drop the exported motion files in assets/steps/step-0X.mp4 (from Figma page "Human Token – Motion").
+             The .jpg posters are used until the videos exist. -->
+        <article class="step is-active" id="step-1" role="tabpanel" aria-labelledby="tab-1" data-step="0">
+          <div class="step-media"><video muted playsinline loop preload="none" poster="assets/steps/step-01.jpg" data-src="assets/steps/step-01.mp4"></video></div>
+          <div class="step-copy">
+            <span class="step-num">01</span>
+            <h3>Start the verification</h3>
+            <p>Ask your user to take a quick selfie. No documents, no passwords, no additional identifiers. Just a selfie.</p>
+          </div>
+        </article>
+        <article class="step" id="step-2" role="tabpanel" aria-labelledby="tab-2" data-step="1" hidden>
+          <div class="step-media"><video muted playsinline loop preload="none" poster="assets/steps/step-02.jpg" data-src="assets/steps/step-02.mp4"></video></div>
+          <div class="step-copy">
+            <span class="step-num">02</span>
+            <h3>Liveness check</h3>
+            <p>Our liveness confirms a real, live human, physically present. Blocking every kind of capture fraud.</p>
+            <ul class="chips" aria-label="Fraud types blocked">
+              <li>Spoofing</li><li>Deepfakes</li><li>Injection</li><li>Use of mask</li><li>AI generated fraud</li>
+            </ul>
+          </div>
+        </article>
+        <article class="step" id="step-3" role="tabpanel" aria-labelledby="tab-3" data-step="2" hidden>
+          <div class="step-media"><video muted playsinline loop preload="none" poster="assets/steps/step-03.jpg" data-src="assets/steps/step-03.mp4"></video></div>
+          <div class="step-copy">
+            <span class="step-num">03</span>
+            <h3>Human Token</h3>
+            <p>After the liveness, we turn that biometric into a high precision, anonymous mathematical token, unique to your company. The same person always returns the same token.</p>
+          </div>
+        </article>
+        <article class="step" id="step-4" role="tabpanel" aria-labelledby="tab-4" data-step="3" hidden>
+          <div class="step-media"><video muted playsinline loop preload="none" poster="assets/steps/step-04.jpg" data-src="assets/steps/step-04.mp4"></video></div>
+          <div class="step-copy">
+            <span class="step-num">04</span>
+            <h3>Your unique user, your decision</h3>
+            <p>Same token on two accounts? Same face with two different documents? Based on your rules, you decide: approve, review or block.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="steps-tabs" role="tablist" aria-label="Steps">
+        <button role="tab" id="tab-1" aria-controls="step-1" aria-selected="true" class="tab is-active"><span class="tab-bar"><span class="tab-fill"></span></span><span class="tab-label"><b>01</b> Selfie</span></button>
+        <button role="tab" id="tab-2" aria-controls="step-2" aria-selected="false" tabindex="-1" class="tab"><span class="tab-bar"><span class="tab-fill"></span></span><span class="tab-label"><b>02</b> Liveness</span></button>
+        <button role="tab" id="tab-3" aria-controls="step-3" aria-selected="false" tabindex="-1" class="tab"><span class="tab-bar"><span class="tab-fill"></span></span><span class="tab-label"><b>03</b> Token</span></button>
+        <button role="tab" id="tab-4" aria-controls="step-4" aria-selected="false" tabindex="-1" class="tab"><span class="tab-bar"><span class="tab-fill"></span></span><span class="tab-label"><b>04</b> Decision</span></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRIVACY BY DESIGN ============ -->
+  <section class="privacy">
+    <div class="privacy-collage" aria-hidden="true">
+      <div class="ghost g-face"><img src="assets/icons/blocked.svg" alt="" width="16" height="16"><span>Face photo</span><i></i></div>
+      <div class="ghost g-account"><img src="assets/icons/face-id-muted.svg" alt="" width="26" height="26"><span>Account A</span><code>70i2…a1f8</code></div>
+      <div class="ghost g-raw"><span>Raw biometrics</span><i></i></div>
+      <div class="ghost g-history"><span>Image history</span><i></i></div>
+      <div class="ghost g-extra"><span>Extra identifiers</span><i></i></div>
+    </div>
+    <div class="container privacy-copy">
+      <span class="icon-tile"><img src="assets/icons/privacy.svg" alt="" width="23" height="26"></span>
+      <h2>Privacy by Design</h2>
+      <p>Privacy isn’t a setting. It’s how the token is built. No prior data is needed, and we delete the face photo. The original selfie can’t be rebuilt.</p>
+    </div>
+  </section>
+
+  <!-- ============ JOURNEY ============ -->
+  <section class="journey">
+    <div class="container journey-inner">
+      <div class="vstack" aria-hidden="true">
+        <div class="vcard vcard-back">
+          <img src="assets/img/avatar-2.png" alt="" width="36" height="36">
+          <div><b>Risk verification</b><small>12 Jan 2025 • <span class="tag tag-plain">Token match</span></small></div>
+          <span class="mark mark-ok">✓</span>
+        </div>
+        <div class="vcard vcard-front">
+          <img src="assets/img/avatar-3.png" alt="" width="44" height="44">
+          <div><b>New user verification</b><small>12 Jan 2025 • <span class="tag tag-green">Human Token generated</span></small></div>
+        </div>
+        <div class="vcard vcard-back">
+          <img src="assets/img/avatar-1.png" alt="" width="36" height="36">
+          <div><b>Password recovery</b><small>12 Jan 2025 • <span class="tag tag-amber">Token doesn’t match</span></small></div>
+          <span class="mark mark-no">✕</span>
+        </div>
+      </div>
+      <h2>Identity, finally human.<br>Across the whole journey.</h2>
+      <p class="lead">Request a new selfie and compare tokens anytime. A match means the same human.</p>
+      <!-- TODO(agency): link to the token generator / demo -->
+      <a href="#" class="btn btn-dark btn-lg" data-todo="generate-token-url">Generate your token <span aria-hidden="true">›</span></a>
+      <p class="password-hint">Password: <code>human</code></p>
+    </div>
+  </section>
+
+  <!-- ============ CLIENTS (auto-scroll marquee) ============ -->
+  <section class="clients" aria-label="Customers">
+    <div class="container clients-inner">
+      <p class="clients-copy">Unico is the new standard for identities. Trusted by companies that scale without limits.</p>
+      <div class="marquee">
+        <ul class="marquee-track">
+          <li><img src="assets/logos/coinbase.svg" alt="Coinbase" width="140" height="79"></li>
+          <li><img src="assets/logos/carrefour.svg" alt="Carrefour" width="140" height="79"></li>
+          <li><img src="assets/logos/getnet.svg" alt="Getnet" width="140" height="79"></li>
+          <li><img src="assets/logos/revolut.svg" alt="Revolut" width="140" height="79"></li>
+          <li><img src="assets/logos/didi.svg" alt="DiDi" width="140" height="79"></li>
+          <li><img src="assets/logos/totalpass.svg" alt="TotalPass" width="140" height="79"></li>
+          <li><img src="assets/logos/shopee.svg" alt="Shopee" width="140" height="79"></li>
+          <li><img src="assets/logos/c-and-a.svg" alt="C&amp;A" width="140" height="79"></li>
+          <li><img src="assets/logos/santander.svg" alt="Santander" width="140" height="79"></li>
+          <li><img src="assets/logos/nubank.svg" alt="Nubank" width="140" height="79"></li>
+        </ul>
+        <!-- duplicate for seamless loop (filled by JS, aria-hidden) -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOUR QUESTIONS ============ -->
+  <section class="center">
+    <div class="container center-inner">
+      <h2 class="h2-lg">How we put the human<br>back at the center.</h2>
+      <p class="lead">A new way to recognize people. From a single selfie, one stable token for each person. No paperwork. No guesswork. No multiple questions, just one that says it all.</p>
+      <ul class="qgrid">
+        <li class="qcard q-green"><span class="icon-tile"><img src="assets/icons/face-id.svg" alt="" width="26" height="26"></span><h3>Is it a live human?</h3><p class="qsub">Proof of humanity</p><p>Liveness blocks deepfakes and injection attacks.</p></li>
+        <li class="qcard q-purple"><span class="icon-tile"><img src="assets/icons/algorithm.svg" alt="" width="26" height="26"></span><h3>Is it a unique human?</h3><p class="qsub">Proof of personhood</p><p>One face, one token. Duplicates surface.</p></li>
+        <li class="qcard q-blue"><span class="icon-tile"><img src="assets/icons/identity.svg" alt="" width="26" height="26"></span><h3>Is it the right human?</h3><p class="qsub">Proof of Authenticity</p><p>User authentication for matching against previous ones.</p></li>
+        <li class="qcard q-orange"><span class="icon-tile"><img src="assets/icons/consent.svg" alt="" width="26" height="26"></span><h3>Did the human consent?</h3><p class="qsub">Proof of consent</p><p>Privacy and consent built into the flow.</p></li>
+      </ul>
+      <div class="answer-bar">One technology. One face. All answers.</div>
+    </div>
+  </section>
+
+  <!-- ============ USE CASES ============ -->
+  <section class="usecases">
+    <div class="container">
+      <h2 class="uc-title">Explore use cases for Human Token and ensure <br><span>greater security</span> and <span>easier verification</span></h2>
+      <ul class="uc-grid">
+        <li class="uc"><span class="uc-icon"><img src="assets/icons/account-takeover.svg" alt="" width="21" height="16"></span><h3>Account takeover</h3><p>Make sure the person logging in is the person who registered. No OTP, no SMS.</p></li>
+        <li class="uc"><span class="uc-icon"><img src="assets/icons/password.svg" alt="" width="22" height="14"></span><h3>Login without passwords</h3><p>A selfie replaces passwords, PINs and security questions.</p></li>
+        <li class="uc"><span class="uc-icon"><img src="assets/icons/key.svg" alt="" width="14" height="24"></span><h3>Password &amp; account recovery</h3><p>Give real owners their account back in seconds, with no queue and no code.</p></li>
+        <li class="uc"><span class="uc-icon"><img src="assets/icons/security.svg" alt="" width="20" height="23"></span><h3>Step-up for sensitive actions</h3><p>Confirm a live, unique person before a transfer, a limit change or a new device.</p></li>
+        <li class="uc"><span class="uc-icon"><img src="assets/icons/multiple-account.svg" alt="" width="22" height="16"></span><h3>Multi account</h3><p>One face, one token. Spot duplicates and repeat fraudsters at sign-up.</p></li>
+        <li class="uc"><span class="uc-icon"><img src="assets/icons/globe.svg" alt="" width="22" height="22"></span><h3>Cross-border</h3><p>Identify the same person in all the countries you operate. No document or identifier needed.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="contact" id="contact">
+    <div class="container contact-inner">
+      <div class="contact-intro">
+        <span class="badge">▤ Contact us</span>
+        <h2>Want to know<br>more?</h2>
+      </div>
+      <!-- TODO(agency): connect to the same form endpoint used on unico.io (HubSpot/RD/Marketo). Field names below are suggestions. -->
+      <form class="contact-form" action="#" method="post" novalidate>
+        <p class="form-title">Fill out the form, and we’ll be in touch.</p>
+        <label class="field full"><span class="sr-only">Full name</span><input name="full_name" type="text" placeholder="Full name" autocomplete="name" required></label>
+        <label class="field"><span class="sr-only">Company name</span><input name="company" type="text" placeholder="Company name" autocomplete="organization" required></label>
+        <label class="field"><span class="sr-only">Position</span><input name="position" type="text" placeholder="Position" autocomplete="organization-title"></label>
+        <label class="field"><span class="sr-only">Corporate email</span><input name="email" type="email" placeholder="Corporate email" autocomplete="email" required></label>
+        <label class="field"><span class="sr-only">Phone number</span><input name="phone" type="tel" placeholder="Phone number" autocomplete="tel"></label>
+        <label class="field full"><span class="sr-only">Country</span><input name="country" type="text" placeholder="Country" autocomplete="country-name" required></label>
+        <div class="checks full">
+          <label><input type="checkbox" name="consent_contact" required> I agree with providing information regarding my personal contact</label>
+          <label><input type="checkbox" name="consent_content"> I would like to receive other content from Unico</label>
+          <label><input type="checkbox" name="consent_whatsapp"> I agree to receive communications via WhatsApp</label>
+        </div>
+        <p class="legal full">Unico is committed to your privacy. This form is intended for individuals over the age of 18. You may cancel these messages at any time. If you have any questions, please refer to our <a href="#" data-todo="privacy-url">Privacy Policy</a>.</p>
+        <button class="btn btn-dark full-start" type="submit">Contact us <span aria-hidden="true">›</span></button>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="assets/icons/unico-logo-white.svg" alt="Unico" width="88" height="19">
+        <ul class="socials" aria-label="Social">
+          <li><a href="#" data-todo="linkedin-url" aria-label="LinkedIn"><img src="assets/icons/social-linkedin.svg" alt="" width="15" height="15"></a></li>
+          <li><a href="#" aria-label="Instagram" data-todo="instagram-url"><img src="assets/icons/social-instagram.svg" alt="" width="15" height="15"></a></li>
+          <li><a href="#" aria-label="YouTube" data-todo="youtube-url"><img src="assets/icons/social-youtube.svg" alt="" width="15" height="11"></a></li>
+          <li><a href="#" aria-label="Facebook" data-todo="facebook-url"><img src="assets/icons/social-facebook.svg" alt="" width="14" height="14"></a></li>
+        </ul>
+      </div>
+      <div class="footer-right">
+        <ul class="cities">
+          <li><img src="assets/icons/pin.svg" alt="" width="10" height="10">Menlo Park</li>
+          <li><img src="assets/icons/pin.svg" alt="" width="10" height="10">São Paulo</li>
+          <li><img src="assets/icons/pin.svg" alt="" width="10" height="10">Mexico City</li>
+          <li><img src="assets/icons/pin.svg" alt="" width="10" height="10">Londrina</li>
+        </ul>
+        <a href="#contact" class="btn btn-outline btn-sm">Contact us <span aria-hidden="true">›</span></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Unico. All rights reserved.</p>
+      <ul class="legal-links">
+        <!-- TODO(agency): confirm final URLs -->
+        <li><a href="#" data-todo="trust-center-url">Trust Center</a></li>
+        <li><a href="#" data-todo="privacy-url">Privacy Policy</a></li>
+        <li><a href="#" data-todo="newsroom-url">Newsroom</a></li>
+        <li><a href="#" data-todo="cookies-url">Cookies Policy</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
